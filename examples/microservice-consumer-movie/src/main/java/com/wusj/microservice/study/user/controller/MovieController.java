@@ -17,6 +17,6 @@ public class MovieController {
 
     @GetMapping("user/{id}")
     public User findById(@PathVariable Long id){
-        return this.restTemplate.getForObject("http://localhost:8000/" + id, User.class);
+        return this.restTemplate.getForObject("http://localhost:8000/user/" + id, User.class);
     }
 }
