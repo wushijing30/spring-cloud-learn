@@ -16,11 +16,9 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/{id}")
+    @GetMapping("/user/{id}")
     public User findById(@PathVariable Long id){
         User fineOne = this.userRepository.findOne(id);
-       //User fineOne = new User();
-        //fineOne.setId(101L);
         return fineOne;
     }
 }

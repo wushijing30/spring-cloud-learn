@@ -2,7 +2,7 @@ server:
   port: 8000
 spring:
   application:
-    name: microservice-provide-user
+    name: microservice-provider-user
   jpa:
     generate-ddl: false
     show-sql: true
